@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.app {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.steps span {
+  flex: 1;
+  text-align: center;
+  padding: 12px 8px;
+  border-radius: 8px;
+  background: #e5e7eb;
+  font-size: 14px;
+}
+
+.steps .active {
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+.saved-message {
+  text-align: center;
+  color: #16803c;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 7px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: normal;
+  margin: 14px 0;
+}
+
+.checkbox-label input {
+  width: 18px;
+  height: 18px;
+}
+
+.selected-tech {
+  margin-top: 20px;
+  padding: 12px;
+  background: #f0f4ff;
+  border-radius: 6px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.edit-button {
+  background: #6b7280;
+  padding: 7px 15px;
+}
+
+.edit-button:hover {
+  background: #4b5563;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.review-section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.review-section h3 {
+  margin-top: 0;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-header h3 {
+  margin-bottom: 10px;
+}
+
+.review-section p {
+  margin: 8px 0;
+}
+
+@media (max-width: 650px) {
+  .app {
+    margin: 20px auto;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
